@@ -33,7 +33,8 @@ const server = http.createServer(function (req, res) {
 });
 
 // Listen on port 3000, IP defaults to 127.0.0.1
-server.listen(port);
+const hostname = '0.0.0.0'
+server.listen(port, hostname)
 
 // Put a friendly message on the terminal
-console.log('Server running at http://127.0.0.1:' + port + '/');
+console.log(`Server running at ${hostname}:` + port + '/')
