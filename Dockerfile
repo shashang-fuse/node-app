@@ -19,6 +19,7 @@ COPY . .
  
 # Expose the port the app runs in. this just to inform developers. it doesn't do anything
 EXPOSE 3000  
+
  
 # Serve the app
 CMD ["npm", "start"]
