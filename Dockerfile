@@ -17,8 +17,8 @@ RUN npm ci
 # Get all the code needed to run the app
 COPY . .
  
-# Expose the port the app runs in
-EXPOSE 3000
+# Expose the port the app runs in. this just to inform developers. it doesn't do anything
+EXPOSE 3000  
  
 # Serve the app
 CMD ["npm", "start"]
